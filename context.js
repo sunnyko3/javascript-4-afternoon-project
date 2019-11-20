@@ -19,7 +19,16 @@
 */
   
 
-//Code Here
+let user = {
+  username: 'string',
+  email: 'string',
+  getUsername: function(){
+
+ 
+    return this.username
+  }
+}
+
 
 
 
@@ -41,7 +50,7 @@ class Animal {
   }
 }
 
-//Code Here
+var animal1 = new Animal('str','str','str')
 
 
 
@@ -61,7 +70,7 @@ let who = {
   location: 'Belize'
 }
 
-//Code Here
+var whoSaysHi = sayHi.bind(who)
 
 
 
@@ -76,7 +85,7 @@ function whatIsThis() {
 }
 
 // uncomment the line below and tell us what the context of "this" is for whatIsThis()
-//let context1 = ???
+let context1 = this
 
 let product = {
   name: 'snake plant',
@@ -87,7 +96,7 @@ let product = {
 let func = whatIsThis.bind(product)
 
 // uncomment the line below and tell us what the context of "this" is when we invoke func
-//let context2 = ???
+let context2 = product
 
 let vacation = {
   location: 'Hawaii',
